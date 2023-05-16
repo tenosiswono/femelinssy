@@ -15,7 +15,7 @@ export default function Home() {
         <div>
           <Avatar className="h-24 w-24">
             <AvatarImage src="/profile.jpeg" />
-            <AvatarFallback>FL</AvatarFallback>
+            <AvatarFallback>femelinssy</AvatarFallback>
           </Avatar>
         </div>
       </div>
@@ -38,8 +38,10 @@ export default function Home() {
             className="relative p-4"
           >
             <div className="rounded-md bg-background flex flex-row p-4">
-              <Phone />
-              <span className="font-bold mx-4">Whatsapp Us now</span>
+              <Phone className="text-accent" />
+              <span className="font-bold mx-4 text-accent">
+                Whatsapp Us now
+              </span>
             </div>
           </a>
         </div>
@@ -48,8 +50,14 @@ export default function Home() {
             className="rounded-xl bg-background p-4 h-32 w-32 flex flex-col justify-between"
             href="https://www.instagram.com/femelinssy/"
           >
-            <Instagram className="h-8 w-8" />
-            <div>Instagram</div>
+            <Image
+              src="/ig.png"
+              className="h-8 w-8"
+              alt="instagram"
+              width={32}
+              height={32}
+            />
+            <div className="font-medium text-accent">Instagram</div>
           </a>
           <a
             className="rounded-xl bg-background p-4 h-32 w-32 flex flex-col justify-between"
@@ -62,7 +70,7 @@ export default function Home() {
               width={32}
               height={32}
             />
-            <div>Instagram</div>
+            <div className="font-medium text-accent">Tokopedia</div>
           </a>
           <a
             className="rounded-xl bg-background p-4 h-32 w-32 flex flex-col justify-between"
@@ -75,7 +83,7 @@ export default function Home() {
               width={32}
               height={32}
             />
-            <div>Shopee</div>
+            <div className="font-medium text-accent">Shopee</div>
           </a>
         </div>
       </div>
