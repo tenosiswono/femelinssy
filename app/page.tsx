@@ -29,7 +29,8 @@ export default function Home() {
             loop
             playsInline
           >
-            <source src="vid.webm" />
+            <source src="vid.webm" type="video/webm" />
+            <source src="vid.mp4" type="video/mp4" />
           </video>
           <a
             href="https://api.whatsapp.com/send/?phone=6282114222054&text&type=phone_number&app_absent=0"
